@@ -119,3 +119,7 @@ chromium-browser --disable-web-security --user-data-dir=/home/user/anywhere/chro
 This works because there is code in app.tsx that preempts all fetch() calls and checks if the app is being served from localhost. If so, it modifies the request to point to localhost:8080 specifically, rather than localhost:9000 which is where webpack-dev-server serves the frontend code from.
 
 It might be possible to improve this technique. Suggestions are welcome.
+
+### End User Documentation
+
+The end user documentation for Pantheon 2 is stored in /pantheon-bundle/src/main/resources/SLING-INF/content/docs/ref_prerequisites.adoc.
